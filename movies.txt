@@ -1,0 +1,34 @@
+1. Home page
+   Sign in is not required
+   List of movies sorted by popularity 
+
+2. Search page
+   Sign in is not required
+   Form  for search paramters like 
+   --Now Playing 
+   -- Upcoming page
+   -- producer
+   -- genres
+   -- release dates
+   -- others   
+   
+3. Client may select any movie from a list (see previous 2 items)
+   Details with two buttons "Add to watching list" , "Add to favorites"   
+	
+4. Log in (Username for an authorized users is saved to localStorage
+  Only for unauthorized users
+  username / password or triggering sign up
+  4.1 Login form contains username / password
+  4.2 Sign up form username / password / {optionally confirm password field) (username must be an unique)
+  
+5. Logout (removes username from localStorage)
+   Only for authorized users
+6. Watching List
+    6.1 Options 
+	   6.1.1 Remove a movie
+	   6.1.2 Add 
+7. Favorites List
+	 7.1 Options 
+	   7.1.1 Remove a movie
+	   7.1.2 Add 
+   

@@ -1,0 +1,19 @@
+Validation framework
+1. Write class Validator 
+    1.1 Public static method validate
+	    1.1.2 Takes Object object
+		1.1.3 Returns List<String> list of error messages
+		1.1.4. Implementation hints
+		     1.1.4.1 Gets all fields that may be with any access modifier
+			 1.1.4.2 Iterates all fields
+			        1.1.4.2.1. For each field
+					         1.1.4.2.1.1 Gets all annotations annotated by annotation Validation
+							 1.1.4.2.1.2 For each annotation
+							           1.1.4.2.1.2.1 Defines the object of the Class implementing interface Validator
+           									   for performing real validation. Interface Validator has method getMessage taking Field field, Object object and 
+											   returning error message if any
+            									   For example, according to the annotation name (annotation.annoytationType().getName()). There are different ways
+								       1.1.4.2.1.2.2 Creates object of the defined in 1.1.4.2.1.2.1 class using constructor by default
+									   1.1.4.2.1.2.3 Calls method getMessage passing the required arguments
+									   1.1.4.2.1.2.3 Processing the being returned message (If message is not empty, adds the message to the list of error messages
+							 
